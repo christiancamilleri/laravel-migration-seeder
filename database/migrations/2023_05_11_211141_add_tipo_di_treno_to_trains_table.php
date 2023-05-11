@@ -14,7 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->string('stazione_di_arrivo')->after('stazione_di_partenza');
+
+            $table->string('tipo_di_treno', 50)->nullable()->after('azienda');
         });
     }
 
@@ -26,8 +27,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-
-            $table->dropColumn(('stazione_di_arrivo'));
+            $table->dropColumn('tipo_di_treno');
         });
     }
 };

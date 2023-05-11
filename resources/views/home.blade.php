@@ -1,22 +1,24 @@
 @extends('layouts/main-layout')
 
 @section('content')
-    <div class="container">
+    <div class="container card-container">
         @foreach ($trains as $item)
         <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">{{$item->azienda}}</h5>
-              <span class="card-text">stazione di partenza: {{$item->stazione_di_partenza}}</span>
+              <span class="card-text">Treno: <strong>{{$item->tipo_di_treno}}</strong></span>
               <br>
-              <span  class="card-link">stazione di arrivo: {{$item->stazione_di_arrivo}}</span>
+              <span class="card-text">stazione di partenza: <strong>{{$item->stazione_di_partenza}}</strong> </span>
               <br>
-              <span  class="card-link">orario di partenza: {{$item->orario_di_partenza}}</span>
+              <span  class="card-link">stazione di arrivo: <strong>{{$item->stazione_di_arrivo}}</strong></span>             
               <br>
-              <span  class="card-link">orario di arrivo: {{$item->orario_di_arrivo}}</span>
+              <span  class="card-link">orario di partenza: <strong>{{$item->orario_di_partenza}}<strong>/</span>
               <br>
-              <span  class="card-link">codice treno: {{$item->codice_treno}}</span>
-                <br>
-              <span  class="card-link">numero carrozze: {{$item->numero_carrozze}}</span>
+              <span  class="card-link">orario di arrivo: <strong>{{$item->orario_di_arrivo}}</strong></span>
+              <br>
+              <span  class="card-link">codice treno: <strong>{{$item->codice_treno}}</strong></span>                
+               <br>
+              <span  class="card-link">numero carrozze: <strong>{{$item->numero_carrozze}}</strong></span> 
             </div>
           </div>   
     @endforeach

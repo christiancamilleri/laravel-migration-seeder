@@ -1,1 +1,32 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+
+    background-color: rgb(253, 0, 0);
+
+    .card-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        margin-top: 5em;
+
+        .card {
+            background-color: darkgray;
+
+            border: 1px solid black;
+
+            .card-body {
+
+                span {
+                    strong {
+                        color: yellow;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
