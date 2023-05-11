@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('azienda');
             $table->string('stazione_di_partenza');
-            $table->string('orario_di_partenza');
-            $table->string('orario_di_arrivo');
-            $table->tinyInteger('codice_treno');
-            $table->string('numero_carrozze');
+            $table->dateTime('orario_di_partenza');
+            $table->dateTime('orario_di_arrivo');
+            $table->smallInteger('codice_treno');
+            $table->smallInteger('numero_carrozze');
             $table->boolean('in_orario');
             $table->boolean('cancellato');
 
