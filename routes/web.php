@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\train\Traincontroller;
+use App\Http\Controllers\Train\Traincontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
