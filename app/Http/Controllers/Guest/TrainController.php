@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\train;
+namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use App\Models\Train;
 use Illuminate\Http\Request;
 
-class Traincontroller extends Controller
+class TrainController extends Controller
 {
     public function index()
     {

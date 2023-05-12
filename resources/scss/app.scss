@@ -2,16 +2,19 @@
 
 body {
 
-    background-color: rgb(253, 0, 0);
+    background-color: darkslategray;
 
-    .card-container {
+    .container {
+        width: 100%;
+
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        flex-flow: row wrap;
 
         margin-top: 5em;
 
         .card {
+            width: calc(100% / 3);
+
             background-color: darkgray;
 
             border: 1px solid black;
@@ -20,7 +23,7 @@ body {
 
                 span {
                     strong {
-                        color: yellow;
+                        color: brown;
                     }
                 }
 
